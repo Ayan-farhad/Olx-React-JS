@@ -4,12 +4,20 @@ import { login } from "../../Config/Firebase";
 
 function LoginPage() {
     const navigate = useNavigate();
-    const [email ,setEmail] = useState()
-    const [password ,setPassword] = useState()
+    const [email ,setEmail] = useState();
+    const [password ,setPassword] = useState();
 
-    const handleLoginBtn = ()=>{
-        login({email , password});
-    }
+    const handleLoginBtn = async()=>{
+        await login({ email, password }).then((res) => {
+            console.log("🚀 ~ awaitlogin ~ res:", res)
+            if (res && res.user) {
+                navigate('/')
+            }
+
+        }).catch(err => {
+            console.log("🚀 ~ awaitlogin ~ err:", err)
+        })
+    };
 
     return (
         <div>
