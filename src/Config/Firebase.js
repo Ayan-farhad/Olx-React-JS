@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
@@ -15,7 +15,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+export const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
@@ -70,7 +70,7 @@ const SellProduct = async (productInfo) => {
             quantity,
             imageUrl: url
         });
-        alert('Post Ad successfully');
+        alert('Successfully Ad post');
     } catch (e) {
         alert(e.message);
     }
@@ -88,9 +88,20 @@ const getDataFromFirebase = async () => {
     return ads;
 }
 
+const userLogout = async () => {
+
+    const auth = getAuth();
+    signOut(auth).then(() => {
+        alert('Successfully logout!')
+    }).catch((error) => {
+        // An error happened.
+    });
+}
+
 export {
     Register,
     login,
     SellProduct,
-    getDataFromFirebase
+    getDataFromFirebase,
+    userLogout
 }
