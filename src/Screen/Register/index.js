@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Register } from "../../Config/Firebase";
 import { useState } from "react";
+import olx from '../../assest/ulx.svg';
 
 function RegisterPage() {
     const navigate = useNavigate();
@@ -25,19 +26,27 @@ function RegisterPage() {
 
     return (
         <div>
-            <h1>Register page</h1>
 
-            <input placeholder="Enter fullname" onChange={(e) => setfullname(e.target.value)} /><br />
-            <input placeholder="Enter age" onChange={(e) => setAge(e.target.value)} /><br />
-            <input placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} /><br />
-            <input type="password" placeholder="Enter password" onChange={(e) => setPassword(e.target.value)} /><br />
-
-            <button onClick={handleRegisterBtn} >Register</button>
-
-            <p>
-                you have an account.
-                <span onClick={() => navigate('/Login')} style={{ color: 'blue' }} > Login</span>
-            </p>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <div style={{ background: 'rgb(240, 235, 235)', width: '90%', maxWidth: '400px', textAlign: 'center', padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
+                    <div style={{ display: "flex", justifyContent: 'center' }}>
+                        <img style={{ width: '40px', }} src={olx} >
+                        </img>
+                        <h2 style={{ marginLeft: '10px' }} >OLX Login Page</h2>
+                    </div>
+                    <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} placeholder="Full Name" onChange={(e) => setfullname(e.target.value)} />
+                    <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+                    <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} placeholder="Age" onChange={(e) => setAge(e.target.value)} />
+                    <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+                    <br />
+                    {/* <button style={{ width: '100%', height: '30px', border: 'none', background: 'rgb(51, 47, 122)', color: 'white' }} onClick={handleRegisterBtn}>Create Account</button> */}
+                    <button onClick={handleRegisterBtn}  style={{ width: '100%', height: '35px', border: 'none',borderRadius:5, background: '#002f34', color: 'white', cursor: "pointer"}} >Create account</button>
+                    <p>
+                        Already have an account.
+                        <span onClick={() => navigate('/Login')} style={{color:'blue'}}> Login</span>
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }

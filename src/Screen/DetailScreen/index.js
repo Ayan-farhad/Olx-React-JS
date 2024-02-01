@@ -1,7 +1,13 @@
+import Footer from "../../Component/Footer";
+import Navbar from "../../Component/Navbar";
+
 function DetailScreen(){
     return (
         <div>
-            <h1>DetailScreen </h1>
+            <Navbar/>
+            
+            <img src="https://tpc.googlesyndication.com/simgad/2415883724856240815" />
+            <Footer/>
         </div>
     )
 }
