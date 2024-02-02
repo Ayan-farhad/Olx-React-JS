@@ -9,8 +9,8 @@ function ApiCards(props) {
     }
 
     return (
-        <div onClick={() => HandleCardPress(props)} style={{ display: "inline-flex", marginBottom: 20, margin: 10, cursor: "pointer" }}  >
-            <div style={{ borderRadius: 5, height: 400, border: '1px solid rgb(199, 196, 196)' }} className="color">
+        <div  onClick={() => HandleCardPress(props)} style={{ display: "inline-flex", marginBottom: 20, margin: 10, cursor: "pointer" }}  >
+            <div className="Cards" style={{ borderRadius: 5, height: 400, border: '1px solid rgb(199, 196, 196)' }}>
                 {imageUrl ?
                     <img style={{ width: '17.3rem', height: 200, borderRadius: 5, borderBottom: '1px solid rgb(180, 190, 190)' }} src={imageUrl} className="card-img-top" alt="alt" />
                     : null}

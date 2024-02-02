@@ -9,6 +9,7 @@ import TopBuilding from '../../assest/building.svg';
 import sellicon from '../../assest/sellicon.svg';
 import BottomOlx from '../../assest/olx.svg';
 import Category from "../Icons";
+import search from '../../assest/search.svg'
 
 function Navbar() {
     const navigate = useNavigate();
@@ -33,8 +34,8 @@ function Navbar() {
     }, []);
 
     return (
-        <div>
-            <div style={{ height: '10rem', }} ></div>
+        <div className="viewHeight">
+            <div style={{ height: '8rem' }}  ></div>
             <div style={{ color: "black", width: '100%', position: 'fixed', top: 0 }} >
                 <header style={{ background: 'rgb(239, 236, 236)' }}>
                     <div style={{ display: 'flex', justifyContent: 'flex-start' }} >
@@ -43,20 +44,23 @@ function Navbar() {
                         <a style={{ padding: '12px 20px 0px 0px' }}>MOTORS</a>
                         <img style={{ padding: '0px 4px 0px 0px' }} src={TopBuilding} ></img>
                         <a style={{ padding: '12px 1px 0px 0px' }}>PROPERTY</a>
+                <button onClick={Logout}  >Logout</button>
 
                     </div>
                 </header>
                 <nav style={{ background: 'rgb(239, 236, 236)', display: 'flex', justifyContent: 'flex-start' }} className='BottomNavbar' >
 
                     <img className='mediaremove' style={{ width: '80px', padding: '0px 20px' }} src={BottomOlx} ></img>
-                    <input className='inp' style={{
+                    <input className='inp1' style={{
                         width: '15rem',
                         height: '40px',
                         margin: '12px 10px 0px 0px',
                         border: '2px solid black',
                         borderRadius: '5px'
                     }} placeholder='Pakistan' ></input>
-                    <input className='Inp' style={{ width: '45rem', height: '40px', margin: '12px 15px 0px 0px', border: '2px solid black', borderRadius: '5px' }} placeholder='Pakistan' ></input>
+                    {/* <input className='Inp2' style={{ width: '45rem', height: '40px', margin: '12px 15px 0px 0px', border: '2px solid black', borderRadius: '5px' }} placeholder='Pakistan' ></input> */}
+                    <input className='SearchInp' style={{ width: '40rem', height: '2.3rem', marginLeft: 18, marginTop: 6, border: '2px solid black', borderTopLeftRadius: 5, borderBottomLeftRadius: 5, paddingLeft: 8 }} placeholder="Find Cars, Mobile Phones and more..." ></input>
+                <img style={{ background: 'black', width: 50, height: 42.5, marginTop: 5.8, borderTopRightRadius: 5, borderBottomRightRadius: 5 }} src={search} ></img>
 
                     {user ?
                         <h4>{user.email}</h4> :
@@ -69,7 +73,7 @@ function Navbar() {
                         </div>
                     </div>
                 </nav>
-                <button onClick={Logout}  >Logout</button>
+           
             </div>
         </div>
     )

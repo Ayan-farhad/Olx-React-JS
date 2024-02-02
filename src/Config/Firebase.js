@@ -23,7 +23,7 @@ const Register = async (userInfo) => {
 
     try {
         const { email, password, age, fullname } = userInfo;
-        await createUserWithEmailAndPassword(auth, email, password).then((res) => {
+        await createUserWithEmailAndPassword(auth, email, password, fullname).then((res) => {
             alert('Register successfully');
             return res;
         })
