@@ -4,6 +4,8 @@ import { getDataFromFirebase } from "../../Config/Firebase";
 import ApiCards from "../../Component/Cards";
 import Footer from "../../Component/Footer";
 import Categories from "../../Component/Icons";
+import Banner from "../../Component/Banner";
+import BackToTop from "../../Component/BackToTop";
 
 function DashBoard() {
     const [postData, setPostData] = useState([]);
@@ -26,7 +28,8 @@ function DashBoard() {
                 console.log("🚀 ~ {postData.map ~ item:", item)
                 return <ApiCards item={item} />
             })}
-
+            <Banner/>
+            <BackToTop/>
             <Footer />
         </div>
     )

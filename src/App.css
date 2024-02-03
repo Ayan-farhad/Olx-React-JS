@@ -53,3 +53,9 @@ input{
   font-size: small;
 } */
 
+
+/* localstorage:daata globally mil jae aur refresh karne per save rahe 
+problem: jab hum ek componennt me localstorge me kuch set karwaty  hain , to dosre component me realtime 
+pata nhii chalta jab tak hum refresh na karlen */
+
+  

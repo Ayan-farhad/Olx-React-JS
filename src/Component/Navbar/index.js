@@ -58,10 +58,8 @@ function Navbar() {
                         border: '2px solid black',
                         borderRadius: '5px'
                     }} placeholder='Pakistan' ></input>
-                    {/* <input className='Inp2' style={{ width: '45rem', height: '40px', margin: '12px 15px 0px 0px', border: '2px solid black', borderRadius: '5px' }} placeholder='Pakistan' ></input> */}
-                    <input className='SearchInp' style={{ width: '40rem', height: '2.3rem', marginLeft: 18, marginTop: 6, border: '2px solid black', borderTopLeftRadius: 5, borderBottomLeftRadius: 5, paddingLeft: 8 }} placeholder="Find Cars, Mobile Phones and more..." ></input>
-                <img style={{ background: 'black', width: 50, height: 42.5, marginTop: 5.8, borderTopRightRadius: 5, borderBottomRightRadius: 5 }} src={search} ></img>
-
+                    <input className='Inp2' style={{ width: '45rem', height: '40px', margin: '12px 15px 0px 0px', border: '2px solid black', borderRadius: '5px' }} placeholder='Pakistan' ></input>
+                    
                     {user ?
                         <h4>{user.email}</h4> :
                         <button onClick={() => navigate('/Login')} style={{ height: '3rem', fontWeight: 'bold', fontSize: '20px', marginTop: '10px', border: 'none', background: 'none', width: '7%' }} ><u>Login</u></button>
