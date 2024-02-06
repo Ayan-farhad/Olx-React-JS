@@ -53,9 +53,11 @@ input{
   font-size: small;
 } */
 
-
-/* localstorage:daata globally mil jae aur refresh karne per save rahe 
-problem: jab hum ek componennt me localstorge me kuch set karwaty  hain , to dosre component me realtime 
-pata nhii chalta jab tak hum refresh na karlen */
-
-  
+/* Steps to use Redux (redux.js) ( slice reducer ke liye banate hain )
+ 1. npm i redux react-redux @reduxjs/toolkit
+ 2. create a store folder in src and create a index.js file (main file) in store.
+ 3. import configureStore from @reduxjs/toolkit form website.
+ 4. const store = configureStore({  // reducer : 'jou bhi hamara module hai'Slice.reducer})
+ 5. (redux (store) or react (app) ko connect karne waali cheez 'Provider')
+ <Provider store = {store}></Provider> 
+*/

@@ -44,7 +44,6 @@ function Navbar() {
                         <a style={{ padding: '12px 20px 0px 0px' }}>MOTORS</a>
                         <img style={{ padding: '0px 4px 0px 0px' }} src={TopBuilding} ></img>
                         <a style={{ padding: '12px 1px 0px 0px' }}>PROPERTY</a>
-                <button onClick={Logout}  >Logout</button>
 
                     </div>
                 </header>
@@ -64,6 +63,10 @@ function Navbar() {
                         <h4>{user.email}</h4> :
                         <button onClick={() => navigate('/Login')} style={{ height: '3rem', fontWeight: 'bold', fontSize: '20px', marginTop: '10px', border: 'none', background: 'none', width: '7%' }} ><u>Login</u></button>
                     }
+                    {user ?
+                    <button onClick={Logout} style={{ height: '3rem', fontWeight: 'bold', fontSize: '20px', marginTop: '10px', border: 'none', background: 'none', width: '7%' }}   >Logout</button> : null   
+                    }
+                    
                     <div style={{ cursor: 'pointer', marginRight: 20, display: "flex", flexDirection: "column", alignItems: "center", marginRight: 10, marginTop: 10 }}>
                         <div style={{ position: "relative" }}>
                             <img src={sellicon} style={{ width: '5.5rem' }}></img>
