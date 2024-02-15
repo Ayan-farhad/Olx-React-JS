@@ -37,7 +37,7 @@ function RegisterPage() {
                     <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} placeholder="Full Name" onChange={(e) => setfullname(e.target.value)} />
                     <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
                     <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} placeholder="Age" onChange={(e) => setAge(e.target.value)} />
-                    <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+                    <input style={{ width: '100%', height: '30px', border: 'none', margin: '10px 0' }} type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
                     <br />
                     {/* <button style={{ width: '100%', height: '30px', border: 'none', background: 'rgb(51, 47, 122)', color: 'white' }} onClick={handleRegisterBtn}>Create Account</button> */}
                     <button onClick={handleRegisterBtn}  style={{ width: '100%', height: '35px', border: 'none',borderRadius:5, background: '#002f34', color: 'white', cursor: "pointer"}} >Create account</button>

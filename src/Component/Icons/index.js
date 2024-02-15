@@ -2,7 +2,7 @@ function Categories() {
 
     return (
         <div>
-            <div style={{ display: "flex", padding: '15px' }}>
+            {/* <div style={{ display: "flex", padding: '15px' }}>
                 <p style={{ margin: "0 8px" }}>ALL catogary</p>
                 <p style={{ margin: "0 8px" }}> Mobile Phones</p>
                 <p style={{ margin: "0 8px" }}>Car</p>
@@ -11,12 +11,12 @@ function Categories() {
                 <p style={{ margin: "0 8px" }}>Video-Audios</p>
                 <p style={{ margin: "0 8px" }}>Tablets</p>
                 <p style={{ margin: "0 8px" }}>Land&Plots</p>
-            </div>
-            <img src="https://images.olx.com.pk/thumbnails/424970966-800x600.webp" width={"95%"} />
+            </div> */}
+            <img className="banner1" src="https://images.olx.com.pk/thumbnails/424970966-800x600.webp"/>
 
             <h2 style={Categoriesleft} >All Categories</h2>
 
-            <div style={{ display: 'flex',marginBottom:20,marginLeft:20 }}>
+            {/* <div style={{ display: 'flex',marginBottom:20,marginLeft:20 }}>
                 <div>
                     <img style={{ width: '60%' }} src="https://www.olx.com.pk/assets/mobiles.8c768c96bfde33f18fcf5af2a8b9cf71.png" ></img>
                     <p style={{fontWeight:"bold"}} >Mobile</p>
@@ -71,7 +71,8 @@ function Categories() {
                     <img  style={{width:'60%'}} src="https://www.olx.com.pk/assets/kids.cd8d8864804f1c35dd6a7df68268a48d.png" ></img>
                     <p style={{fontWeight:'bold'}}>Kids</p>
                 </div>
-            </div>
+            </div> */}
+           
         </div>
     )
 }

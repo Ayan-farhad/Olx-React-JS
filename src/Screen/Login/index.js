@@ -32,7 +32,7 @@ function LoginPage() {
                 <p style={{ display: "flex", marginLeft: '15px' }} >Email</p>
                 <input style={{ width: '90%', height: '30px', border: 'none', paddingLeft:10 }} placeholder="Enter email" onChange={(e)=>setEmail(e.target.value)} />
                 <p style={{ display: "flex", marginLeft: '15px' }} >Password</p>
-                <input style={{ width: '90%', height: '30px', border: 'none', paddingLeft:10 }} placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)}  />
+                <input style={{ width: '90%', height: '30px', border: 'none', paddingLeft:10 }} type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)}  />
                 <p style={{ display: "flex", marginLeft: '15px' }} >Forgotten Password</p>
                 <button onClick={handleLoginBtn}  style={{ width: '70%', height: '30px', border: 'none',borderRadius:5, background: '#002f34', color: 'white', cursor: "pointer" }} >Login</button>
                 <p>Don't You Have An Account.
