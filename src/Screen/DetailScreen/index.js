@@ -14,7 +14,7 @@ function DetailScreen() {
     return (
         <div>
             <Navbar /><br /><br /><br /><br></br>
-            <img src="https://tpc.googlesyndication.com/simgad/2415883724856240815" />
+            <img className="banner-1" src="https://tpc.googlesyndication.com/simgad/2415883724856240815" />
 
             {/* carousel */}
             <div className="main-section">
@@ -103,5 +103,6 @@ const btn2 = {
     fontSize: '18px'
 };
 const span ={
+    color: 'gray',
     fontSize:'18px'
 }
