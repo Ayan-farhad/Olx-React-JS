@@ -20,7 +20,7 @@ function SellPage() {
             <input placeholder="Descrisption" onChange={(e)=>setDescription(e.target.value)} /><br />
             <input placeholder="Quantity" onChange={(e)=>setQuantity(e.target.value)} /><br />
 
-            <input type="file" onChange={(e)=>setImage(e.target.files[0])} /><br/>
+            <input type="file" onChange={(e)=>setImage(e.trget.files[0])} /><br/>
 
             <button onClick={handlePostBtn} >Post Ad</button>
         </div>
