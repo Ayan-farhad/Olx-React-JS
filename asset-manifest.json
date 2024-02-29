@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Olx-React-JS/static/css/main.c5780d14.css",
+    "main.js": "/Olx-React-JS/static/js/main.7ce7921c.js",
+    "static/js/787.a0fa0da0.chunk.js": "/Olx-React-JS/static/js/787.a0fa0da0.chunk.js",
+    "static/media/olx top.svg": "/Olx-React-JS/static/media/olx top.51535fdf14df03ce040cd0d94d1603dc.svg",
+    "static/media/olx.svg": "/Olx-React-JS/static/media/olx.8384a3aeab403301a67ad7294dd7225b.svg",
+    "static/media/sellicon.svg": "/Olx-React-JS/static/media/sellicon.c9444e265361a7c268ac21c574978772.svg",
+    "static/media/ulx.svg": "/Olx-React-JS/static/media/ulx.79d797305b02c658d4eb022ba8f4f409.svg",
+    "index.html": "/Olx-React-JS/index.html",
+    "static/media/building.svg": "/Olx-React-JS/static/media/building.b836182f7efff023ce065ba3595f314d.svg",
+    "static/media/car-front.svg": "/Olx-React-JS/static/media/car-front.6e74f1647dda84b4cfbbc9de17d1fe9f.svg",
+    "main.c5780d14.css.map": "/Olx-React-JS/static/css/main.c5780d14.css.map",
+    "main.7ce7921c.js.map": "/Olx-React-JS/static/js/main.7ce7921c.js.map",
+    "787.a0fa0da0.chunk.js.map": "/Olx-React-JS/static/js/787.a0fa0da0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5780d14.css",
+    "static/js/main.7ce7921c.js"
+  ]
+}
